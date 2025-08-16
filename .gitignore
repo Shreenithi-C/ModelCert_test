@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large model files (optional - you might want to track small sample models)
+*.pth
+*.pkl
+*.h5
+*.joblib
+
+# Data files (optional - you might want sample data)
+*.csv
+*.xlsx
+*.json
+
+# Logs
+*.log
