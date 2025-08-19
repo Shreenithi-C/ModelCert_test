@@ -303,50 +303,6 @@ def get_timeseries_parameters():
         'extreme_noise': extreme_noise,
         'temporal_shift': temporal_shift
     }
-
-# def get_regression_parameters():
-#     """Get dynamic parameters for regression testing"""
-#     st.markdown('<div class="parameter-section">', unsafe_allow_html=True)
-#     st.markdown("### 🎛️ Dynamic Test Parameters")
-    
-#     col1, col2 = st.columns(2)
-    
-#     with col1:
-#         st.markdown("**Noise Parameters**")
-#         noise_low = st.slider("Low Noise Std Dev", 0.01, 0.5, 0.05, step=0.01, key="reg_noise_low")
-#         noise_high = st.slider("High Noise Std Dev", 0.1, 2.0, 0.2, step=0.1, key="reg_noise_high")
-        
-#         st.markdown("**Feature Drift**")
-#         drift_up_pct = st.slider("Upward Drift (%)", 5, 50, 10, step=5, key="reg_drift_up")
-#         drift_down_pct = st.slider("Downward Drift (%)", 5, 50, 10, step=5, key="reg_drift_down")
-#         nonlinear_drift = st.slider("Nonlinear Drift Factor", 0.1, 2.0, 0.5, step=0.1, key="reg_nonlinear")
-    
-#     with col2:
-#         st.markdown("**Missing Values**")
-#         missing_low_pct = st.slider("Low Missing Values (%)", 5, 30, 10, step=5, key="reg_missing_low")
-#         missing_high_pct = st.slider("High Missing Values (%)", 20, 70, 30, step=5, key="reg_missing_high")
-        
-#         st.markdown("**Outlier Parameters**")
-#         outlier_pct = st.slider("Outlier Injection (%)", 1, 20, 5, step=1, key="reg_outlier_pct")
-#         outlier_multiplier = st.slider("Outlier Multiplier", 2, 50, 10, step=1, key="reg_outlier_mult")
-        
-#         st.markdown("**Scaling Parameters**")
-#         scaling_multiplier = st.slider("Feature Scaling Factor", 0.1, 100, 10, step=0.1, key="reg_scaling")
-    
-#     st.markdown('</div>', unsafe_allow_html=True)
-    
-#     return {
-#         'noise_low': noise_low,
-#         'noise_high': noise_high,
-#         'drift_up_pct': drift_up_pct,
-#         'drift_down_pct': drift_down_pct,
-#         'nonlinear_drift': nonlinear_drift,
-#         'missing_low_pct': missing_low_pct,
-#         'missing_high_pct': missing_high_pct,
-#         'outlier_pct': outlier_pct,
-#         'outlier_multiplier': outlier_multiplier,
-#         'scaling_multiplier': scaling_multiplier
-#     }
 def get_regression_parameters():
     """Get dynamic parameters for regression testing - FIXED VERSION"""
     st.markdown('<div class="parameter-section">', unsafe_allow_html=True)
